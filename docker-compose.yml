@@ -25,13 +25,6 @@ services:
       - READER_APP_SECURE=true #开启登录鉴权，开启后将支持多用户模式
       - READER_APP_SECUREKEY=o<wU94R+7(k6DUm9  #管理员密码  建议修改
       - READER_APP_INVITECODE=aidengrong #注册邀请码 建议修改,如不需要可注释或删除
-# 如需支持webview书源，打开(占用较大，不需要可加 # 注释)
-  readerwebview:
-    image: hectorqin/remote-webview
-    container_name: readerwebview
-    restart: always
-    environment:
-      - TZ=Asia/Shanghai
 volumes:
   reader:
   readerwebview:
